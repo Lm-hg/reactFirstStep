@@ -1,20 +1,6 @@
 import Keys from "./keys"
 export default function Cartes(props){
-    const keysword=[
-        {keysword:"Tonnerre"},
-        {keysword:"Tonnerre"},
-        {keysword:"Tonnerre"},
-        {keysword:"Tonnerre"},
-        {keysword:"Tonnerre"},
-        {keysword:"Tonnerre"},
-        {keysword:"Tonnerre"},
-        {keysword:"Tonnerre"},
-        {keysword:"Tonnerre"},
-        {keysword:"Tonnerre"},
 
-
-
-    ]
     return (
         <div className="card">
             <div className="illustration">
@@ -31,9 +17,9 @@ export default function Cartes(props){
                 <div className="effet">
                         <div className="keywords">
 
-                    {keysword.map((a)=>(
+                    {props.keysword.map((a)=>(
 
-                            <Keys keys={a.keysword}/>
+                        <Keys  keys={a}/>
                     ))}
                         </div>
                 <h2>Effet</h2>

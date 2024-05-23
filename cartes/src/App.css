@@ -4,12 +4,36 @@
   box-sizing: border-box;
 }
 #root{
-  display: flex;
-  flex-wrap:wrap ;
-  gap: 2.5rem;
+
   width: 100%;
 
 }
+.input-number {
+  width: 100px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-text {
+  width: 200px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-focus:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
 p{
   font-size: 0.5rem;
   color: #fff;
